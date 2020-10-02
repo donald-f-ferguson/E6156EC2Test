@@ -97,7 +97,8 @@ def health_check():
 
     pf = platform.system()
 
-    rsp_data = { "status": "healthy", "time": str(datetime.now()),
+    rsp_data = {
+        "mood": "awesome", "status": "healthy", "time": str(datetime.now()),
                  "platform": pf,
                  "release": platform.release()
                  }
